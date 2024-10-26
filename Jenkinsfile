@@ -7,6 +7,20 @@ pipeline {
     }
 
     stages {
+
+
+	stage('Checkout') {
+            steps {
+                checkout scm // Jenkins will handle the checkout automatically
+            }
+        }
+        stage('Other Steps') {
+            steps {
+                dir("${env.WORKSPACE}") { 
+                    // Other Git or build commands
+                }
+            }
+        }
         stage('Clone Repository') {
             steps {
                 // Clone the GitHub repository

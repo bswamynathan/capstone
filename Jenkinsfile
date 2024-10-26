@@ -16,6 +16,8 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
+
+		apt-get update; apt-get install -y docker-ce docker-ce-cli containerd.io
                 // Run the build.sh script to build the Docker image
                 sh './build.sh'
             }

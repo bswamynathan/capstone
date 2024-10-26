@@ -22,4 +22,4 @@ else
 fi
 
 echo "Build complete."
-
+echo "bye"

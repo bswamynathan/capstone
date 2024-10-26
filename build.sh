@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# Variables
+### Variables
 IMAGE_NAME="my-react-app"        
 TAG="latest"               
 DOCKERFILE="Dockerfile"       
